@@ -9,12 +9,15 @@ pipx install git+https://github.com/jonxola/txt.git
 
 ## Usage
 ```
-txt IMAGE_PATH
+txt <path> [-w|--width <width>]
 ```
+* `<path>`: The path to the image you want to convert.
+* `-w`, `--width`: Art width in characters (defaults to 80).
 
-### Options
-* `-w`, `--width`: Text art width in characters.
-* `-o`, `--output`: Folder to create a .txt file in with the text art. By default, the art is simply printed to the terminal.
+If you want to write the text art to a file, you can redirect the output:
+```
+txt <path> > ~/Downloads/art.txt
+``` 
 
 Built with the help of [Praveen Kumar's demo][1].
 
